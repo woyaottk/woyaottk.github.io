@@ -1,0 +1,1248 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="变量Python 中的变量赋值不需要类型声明。每个变量在内存中创建，都包括变量的标识，名称和数据这些信息。每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。等号 &#x3D; 用来给变量赋值。等号 &#x3D; 运算符左边是一个变量名，等号 &#x3D; 运算符右边是存储在变量中的值。 标准数据类型Python有六个标准的数据类型：  Numbers（数字） String（字符串） Lis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python基础语法笔记">
+<meta property="og:url" content="http://example.com/2022/11/29/python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="梭梭子的小空间">
+<meta property="og:description" content="变量Python 中的变量赋值不需要类型声明。每个变量在内存中创建，都包括变量的标识，名称和数据这些信息。每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。等号 &#x3D; 用来给变量赋值。等号 &#x3D; 运算符左边是一个变量名，等号 &#x3D; 运算符右边是存储在变量中的值。 标准数据类型Python有六个标准的数据类型：  Numbers（数字） String（字符串） Lis">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/image-20220518163608168.png">
+<meta property="article:published_time" content="2022-11-29T14:24:40.000Z">
+<meta property="article:modified_time" content="2022-11-29T14:26:03.987Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/image-20220518163608168.png">
+  
+  
+  
+  <title>python基础语法笔记 - 梭梭子的小空间</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="python基础语法笔记"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-11-29 22:24" pubdate>
+          2022年11月29日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          11k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          88 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">python基础语法笔记</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p>Python 中的变量赋值不需要类型声明。<br>每个变量在内存中创建，都包括变量的标识，名称和数据这些信息。<br>每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。<br>等号 &#x3D; 用来给变量赋值。<br>等号 &#x3D; 运算符左边是一个变量名，等号 &#x3D; 运算符右边是存储在变量中的值。</p>
+<h2 id="标准数据类型"><a href="#标准数据类型" class="headerlink" title="标准数据类型"></a>标准数据类型</h2><p>Python有六个标准的数据类型：</p>
+<ul>
+<li>Numbers（数字）</li>
+<li>String（字符串）</li>
+<li>List（列表）</li>
+<li>Tuple（元组）</li>
+<li>Dictionary（字典）</li>
+<li>Boolean（布尔）</li>
+</ul>
+<p><img src="/python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/image-20220518163608168.png" srcset="/img/loading.gif" lazyload alt="image-20220518163608168"></p>
+<h1 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h1><p>标识符由字母、下划线和数字组成，且数字不能开头</p>
+<h1 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">and</span>     <span class="hljs-keyword">as</span>      <span class="hljs-keyword">assert</span>     <span class="hljs-keyword">break</span>     <span class="hljs-keyword">class</span>      <span class="hljs-title class_">continue</span>    <span class="hljs-keyword">def</span>     <span class="hljs-title function_">del</span><br><span class="hljs-keyword">elif</span>    <span class="hljs-keyword">else</span>    <span class="hljs-keyword">except</span>     <span class="hljs-built_in">exec</span>      <span class="hljs-keyword">finally</span>    <span class="hljs-keyword">for</span>         <span class="hljs-keyword">from</span>    <span class="hljs-keyword">global</span><br><span class="hljs-keyword">if</span>      <span class="hljs-keyword">in</span>      <span class="hljs-keyword">import</span>     <span class="hljs-keyword">is</span>        <span class="hljs-keyword">lambda</span>     <span class="hljs-keyword">not</span>         <span class="hljs-keyword">or</span>      <span class="hljs-keyword">pass</span><br><span class="hljs-built_in">print</span>   <span class="hljs-keyword">raise</span>   <span class="hljs-keyword">return</span>     <span class="hljs-keyword">try</span>       <span class="hljs-keyword">while</span>      <span class="hljs-keyword">with</span>        <span class="hljs-keyword">yield</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h1><h3 id="常用的格式符号"><a href="#常用的格式符号" class="headerlink" title="常用的格式符号"></a>常用的格式符号</h3><p>下面是完整的，它可以与％符号使用列表:</p>
+<table>
+<thead>
+<tr>
+<th align="center">格式符号</th>
+<th align="center">转换</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">%c</td>
+<td align="center">字符</td>
+</tr>
+<tr>
+<td align="center">%s</td>
+<td align="center">字符串</td>
+</tr>
+<tr>
+<td align="center">%d</td>
+<td align="center">有符号十进制整数</td>
+</tr>
+<tr>
+<td align="center">%u</td>
+<td align="center">无符号十进制整数</td>
+</tr>
+<tr>
+<td align="center">%o</td>
+<td align="center">八进制整数</td>
+</tr>
+<tr>
+<td align="center">%x</td>
+<td align="center">十六进制整数（小写字母0x）</td>
+</tr>
+<tr>
+<td align="center">%X</td>
+<td align="center">十六进制整数（大写字母0X）</td>
+</tr>
+<tr>
+<td align="center">%f</td>
+<td align="center">浮点数</td>
+</tr>
+<tr>
+<td align="center">%e</td>
+<td align="center">科学计数法（小写’e’）</td>
+</tr>
+<tr>
+<td align="center">%E</td>
+<td align="center">科学计数法（大写“E”）</td>
+</tr>
+<tr>
+<td align="center">%g</td>
+<td align="center">％f和％e 的简写</td>
+</tr>
+<tr>
+<td align="center">%G</td>
+<td align="center">％f和％E的简写</td>
+</tr>
+</tbody></table>
+<h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h1><ul>
+<li>input()的小括号中放入的是，提示信息，用来在获取数据之前给用户的一个简单提示</li>
+<li>input()在从键盘获取了数据以后，会存放到等号右边的变量中</li>
+<li>input()会把用户输入的任何值都作为<strong>字符串</strong>来对待</li>
+</ul>
+<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><h2 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h2><p>下面以a&#x3D;15 ,b&#x3D;10为例进行计算</p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="center">描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">+</td>
+<td align="center">加</td>
+<td>两个对象相加 a + b 输出结果 25</td>
+</tr>
+<tr>
+<td align="left">-</td>
+<td align="center">减</td>
+<td>得到负数或是一个数减去另一个数 a - b 输出结果 5</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="center">乘</td>
+<td>两个数相乘或是返回一个被重复若干次的字符串 a * b 输出结果 150</td>
+</tr>
+<tr>
+<td align="left">&#x2F;</td>
+<td align="center">除</td>
+<td>b &#x2F; a 输出结果 1.5</td>
+</tr>
+<tr>
+<td align="left">&#x2F;&#x2F;</td>
+<td align="center">取整除</td>
+<td>返回商的整数部分 15&#x2F;&#x2F;10 输出结果 1 , 15.0&#x2F;&#x2F;10 输出结果 1.0</td>
+</tr>
+<tr>
+<td align="left">%</td>
+<td align="center">取余</td>
+<td>返回除法的余数 b % a 输出结果 5</td>
+</tr>
+<tr>
+<td align="left">**</td>
+<td align="center">指数</td>
+<td>a**b 为15的10次方， 输出结果 576650390625</td>
+</tr>
+</tbody></table>
+<h2 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h2><table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">描述</th>
+<th align="left">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">&#x3D;&#x3D;</td>
+<td align="left">检查两个操作数的值是否相等，如果是则条件变为真。</td>
+<td align="left">如a&#x3D;3,b&#x3D;3，则（a &#x3D;&#x3D; b) 为 True</td>
+</tr>
+<tr>
+<td align="left">!&#x3D;</td>
+<td align="left">检查两个操作数的值是否相等，如果值不相等，则条件变为真。</td>
+<td align="left">如a&#x3D;1,b&#x3D;3，则(a !&#x3D; b) 为 True</td>
+</tr>
+<tr>
+<td align="left">&gt;</td>
+<td align="left">检查左操作数的值是否大于右操作数的值，如果是，则条件成立。</td>
+<td align="left">如a&#x3D;7,b&#x3D;3，则(a &gt; b) 为 True</td>
+</tr>
+<tr>
+<td align="left">&lt;</td>
+<td align="left">检查左操作数的值是否小于右操作数的值，如果是，则条件成立。</td>
+<td align="left">如a&#x3D;7,b&#x3D;3，则(a &lt; b) 为 False</td>
+</tr>
+<tr>
+<td align="left">&gt;&#x3D;</td>
+<td align="left">检查左操作数的值是否大于或等于右操作数的值，如果是，则条件成立。</td>
+<td align="left">如a&#x3D;3,b&#x3D;3，则(a &gt;&#x3D; b) 为 True</td>
+</tr>
+<tr>
+<td align="left">&lt;&#x3D;</td>
+<td align="left">检查左操作数的值是否小于或等于右操作数的值，如果是，则条件成立。</td>
+<td align="left">如a&#x3D;3,b&#x3D;3，则(a &lt;&#x3D; b) 为 True</td>
+</tr>
+</tbody></table>
+<h2 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h2><table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th>逻辑表达式</th>
+<th align="left">描述</th>
+<th align="left">实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">and</td>
+<td>x and y</td>
+<td align="left">布尔”与”：如果 x 为 False，x and y 返回 False，否则它返回 y 的值。</td>
+<td align="left">True and False， 返回 False。</td>
+</tr>
+<tr>
+<td align="left">or</td>
+<td>x or y</td>
+<td align="left">布尔”或”：如果 x 是 True，它返回 True，否则它返回 y 的值。</td>
+<td align="left">False or True， 返回 True。</td>
+</tr>
+<tr>
+<td align="left">not</td>
+<td>not x</td>
+<td align="left">布尔”非”：如果 x 为 True，返回 False 。如果 x 为 False，它返回 True。</td>
+<td align="left">not True 返回 False, not False 返回 True</td>
+</tr>
+</tbody></table>
+<h1 id="常用的数据类型转换"><a href="#常用的数据类型转换" class="headerlink" title="常用的数据类型转换"></a>常用的数据类型转换</h1><table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">int(x [,base ])</td>
+<td align="center">将x转换为一个整数</td>
+</tr>
+<tr>
+<td align="center">float(x )</td>
+<td align="center">将x转换为一个浮点数</td>
+</tr>
+<tr>
+<td align="center">complex(real [,imag ])</td>
+<td align="center">创建一个复数，real为实部，imag为虚部</td>
+</tr>
+<tr>
+<td align="center">str(x )</td>
+<td align="center">将对象 x 转换为字符串</td>
+</tr>
+<tr>
+<td align="center">repr(x )</td>
+<td align="center">将对象 x 转换为表达式字符串</td>
+</tr>
+<tr>
+<td align="center">eval(str )</td>
+<td align="center">用来计算在字符串中的有效Python表达式,并返回一个对象</td>
+</tr>
+<tr>
+<td align="center">tuple(s )</td>
+<td align="center">将序列 s 转换为一个元组</td>
+</tr>
+<tr>
+<td align="center">list(s )</td>
+<td align="center">将序列 s 转换为一个列表</td>
+</tr>
+<tr>
+<td align="center">chr(x )</td>
+<td align="center">将一个整数转换为一个Unicode字符</td>
+</tr>
+<tr>
+<td align="center">ord(x )</td>
+<td align="center">将一个字符转换为它的ASCII整数值</td>
+</tr>
+<tr>
+<td align="center">hex(x )</td>
+<td align="center">将一个整数转换为一个十六进制字符串</td>
+</tr>
+<tr>
+<td align="center">oct(x )</td>
+<td align="center">将一个整数转换为一个八进制字符串</td>
+</tr>
+<tr>
+<td align="center">bin(x )</td>
+<td align="center">将一个整数转换为一个二进制字符串</td>
+</tr>
+</tbody></table>
+<h1 id="条件判断"><a href="#条件判断" class="headerlink" title="条件判断"></a>条件判断</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">if</span> 要判断的条件<span class="hljs-number">1</span>:<br>	条件成立时，要做的事情<br><span class="hljs-keyword">elif</span> 要判断的条件<span class="hljs-number">2</span>:<br>    条件成立时，要做的事情<br><span class="hljs-keyword">else</span>:<br>    否则，要做的事情<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">a</span> if <span class="hljs-selector-tag">a</span> &gt; <span class="hljs-selector-tag">b</span> else <span class="hljs-selector-tag">b</span><br></code></pre></td></tr></table></figure>
+
+<p>如果 a &gt; b的条件成立,三目运算的结果是a,否则就是b</p>
+<h1 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h1><h2 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">while</span> 条件:<br>    条件满足时，做的事情<span class="hljs-number">1</span><br>    条件满足时，做的事情<span class="hljs-number">2</span><br>    条件满足时，做的事情<span class="hljs-number">3</span><br>    ...(省略)...<br></code></pre></td></tr></table></figure>
+
+<h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">for</span> 临时变量 <span class="hljs-keyword">in</span> 列表或者字符串等可迭代对象:<br>    循环满足条件时执行的代码<br></code></pre></td></tr></table></figure>
+
+<h1 id="容器：字符串、列表、元组、字典"><a href="#容器：字符串、列表、元组、字典" class="headerlink" title="容器：字符串、列表、元组、字典"></a>容器：字符串、列表、元组、字典</h1><h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p>f-strings 提供一种简洁易读的方式, 可以在字符串中包含 Python 表达式. f-strings 以字母 ‘f’ 或 ‘F’ 为前缀, 格式化字符串使用<strong>一对单引号、双引号、三单引号、三双引号</strong>. </p>
+<p>类似EL表达式</p>
+<p><strong>字符串实际上就是字符的数组，所以支持下标索引</strong></p>
+<blockquote>
+<p>切片：</p>
+</blockquote>
+<h4 id="切片的语法：-起始-结束-步长"><a href="#切片的语法：-起始-结束-步长" class="headerlink" title="切片的语法：[起始:结束:步长]"></a>切片的语法：[起始:结束:步长]</h4><p><strong>注意：选取的区间从”起始”位开始，到”结束”位的前一位结束（不包含结束位本身)，步长表示选取间隔。</strong></p>
+<blockquote>
+<p>常见方法：</p>
+</blockquote>
+<ul>
+<li>find（）：检测 str 是否包含在 mystr中，如果是返回开始的索引值，否则返回-1</li>
+<li>index（）：跟find()方法一样，只不过如果str不在 mystr中会报一个异常.</li>
+<li>count（）：返回 str在start和end之间 在 mystr里面出现的次数</li>
+<li>replace（）：把 mystr 中的 str1 替换成 str2,如果 count 指定，则替换不超过 count 次.</li>
+<li>split（）：以 str 为分隔符切片 mystr，如果 maxsplit有指定值，则仅分隔 maxsplit+1 个子字符串</li>
+<li>join（）：将 mystr 插入到 str 中每个元素之间,构造出一个新的字符串</li>
+</ul>
+<blockquote>
+<p>其余常用方法：</p>
+</blockquote>
+<ul>
+<li>capitaliz（）：把字符串的第一个字符大写</li>
+<li>title（）：把字符串的每个单词首字母大写</li>
+<li>startwith（）：检查字符串是否是以 hello 开头, 是则返回 True，否则返回 False</li>
+<li>endswith（）：检查字符串是否以obj结束，如果是返回True,否则返回 False.</li>
+<li>lower（）：转换 mystr 中所有大写字符为小写</li>
+<li>upper（）：转换 mystr 中所有大写字符为小写</li>
+<li>ljust（）：返回一个原字符串左对齐,并使用空格填充至长度 width 的新字符串</li>
+<li>rjust（）：返回一个原字符串右对齐,并使用空格填充至长度 width 的新字符串</li>
+<li>center（）：返回一个原字符串居中,并使用空格填充至长度 width 的新字符串</li>
+<li>lstrip（）：删除 mystr 左边的空白字符</li>
+<li>rstrip（）：删除 mystr 字符串末尾的空白字符</li>
+<li>strip（）：删除mystr字符串两端的空白字符</li>
+<li>rfind（）：类似于 find()函数，不过是从右边开始查找.</li>
+<li>rindex（）：类似于 index()，不过是从右边开始.</li>
+<li>partition（）：把mystr以str分割成三部分,str前，str和str后</li>
+<li>rpartition（）：类似于 partition()函数,不过是从右边开始.</li>
+<li>splitlines（）：按照行分隔，返回一个包含各行作为元素的列表</li>
+<li>isalpha（）：如果 mystr 所有字符都是字母 则返回 True,否则返回 False</li>
+<li>isdigit（）：如果 mystr 只包含数字则返回 True 否则返回 False.</li>
+<li>isalnum（）：如果 mystr 所有字符都是字母或数字则返回 True,否则返回 False</li>
+<li>isspace（）：如果 mystr 中只包含空格，则返回 True，否则返回 False.</li>
+</ul>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>比C语言的数组强大的地方在于列表中的元素可以是不同类型的</p>
+<blockquote>
+<p>常用方法：</p>
+</blockquote>
+<ul>
+<li>append（）：通过append可以向列表添加元素</li>
+<li>extend（）：通过extend可以将另一个集合中的元素逐一添加到列表中</li>
+<li>insert（）：insert(index, object) 在指定位置index前插入元素object</li>
+<li>index（）：index与字符串中的用法相同</li>
+<li>count（）：count与字符串中的用法相同</li>
+<li>pop（）：删除最后一个元素</li>
+<li>remove（）：根据元素的值进行删除</li>
+<li>sort（）：sort方法是将list按特定顺序重新排列，默认为由小到大，参数reverse&#x3D;True可改为倒序，由大到小。</li>
+<li>reverse（）：reverse方法是将list逆置。</li>
+</ul>
+<blockquote>
+<p>列表推导式：</p>
+</blockquote>
+<p>所谓的列表推导式，就是指的轻量级循环创建列表</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">a = [(x, y, z) <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-keyword">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>) <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> <span class="hljs-keyword">range</span>(<span class="hljs-number">3</span>) <span class="hljs-keyword">for</span> z <span class="hljs-keyword">in</span> <span class="hljs-keyword">range</span>(<span class="hljs-number">4</span>, <span class="hljs-number">6</span>)]<br></code></pre></td></tr></table></figure>
+
+<h2 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h2><p>Python的元组与列表类似，不同之处在于<strong>元组的元素不能修改</strong>。元组使用小括号，列表使用方括号。</p>
+<h2 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h2><ul>
+<li>字典和列表一样，也能够存储多个数据</li>
+<li>列表中找某个元素时，是根据下标进行的</li>
+<li>字典中找某个元素时，是根据’名字’（就是冒号:前面的那个值，例如上面代码中的’name’、’id’、’sex’）</li>
+<li>字典的每个元素由2部分组成，键:值。例如 ‘name’:’班长’ ,’name’为键，’班长’为值</li>
+<li>用{}包起来</li>
+</ul>
+<blockquote>
+<p>常用方法：</p>
+</blockquote>
+<ul>
+<li>get（）：除了使用key查找数据，还可以使用get来获取数据</li>
+<li>clear（）：clear清空整个字典</li>
+<li>keys（）：keys返回一个包含字典所有KEY的列表</li>
+<li>values（）：返回一个包含字典所有value的列表</li>
+<li>items（）：返回一个包含所有（键，值）元祖的列表</li>
+</ul>
+<h2 id="公用方法"><a href="#公用方法" class="headerlink" title="公用方法"></a>公用方法</h2><h3 id="1-运算符"><a href="#1-运算符" class="headerlink" title="1. 运算符"></a>1. 运算符</h3><table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th>Python 表达式</th>
+<th>结果</th>
+<th>描述</th>
+<th>支持的数据类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">+</td>
+<td>[1, 2] + [3, 4]</td>
+<td>[1, 2, 3, 4]</td>
+<td>合并</td>
+<td>字符串、列表、元组</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td>[‘Hi!’] * 4</td>
+<td>[‘Hi!’, ‘Hi!’, ‘Hi!’, ‘Hi!’]</td>
+<td>复制</td>
+<td>字符串、列表、元组</td>
+</tr>
+<tr>
+<td align="left">in</td>
+<td>3 in (1, 2, 3)</td>
+<td>True</td>
+<td>元素是否存在</td>
+<td>字符串、列表、元组、字典</td>
+</tr>
+<tr>
+<td align="left">not in</td>
+<td>4 not in (1, 2, 3)</td>
+<td>True</td>
+<td>元素是否不存在</td>
+<td>字符串、列表、元组、字典</td>
+</tr>
+</tbody></table>
+<h3 id="2-python内置函数"><a href="#2-python内置函数" class="headerlink" title="2. python内置函数"></a>2. python内置函数</h3><p>Python包含了以下内置函数</p>
+<table>
+<thead>
+<tr>
+<th align="left">序号</th>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td>len(item)</td>
+<td>计算容器中元素个数</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td>max(item)</td>
+<td>返回容器中元素最大值</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td>min(item)</td>
+<td>返回容器中元素最小值</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td>del(item)</td>
+<td>删除变量</td>
+</tr>
+</tbody></table>
+<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">函数名</span>():<br>    代码<br></code></pre></td></tr></table></figure>
+
+<p>要在函数里使用全局变量那么得使用global</p>
+<blockquote>
+<p> 缺省参数：</p>
+</blockquote>
+<ul>
+<li>在形参中默认有值的参数，称之为缺省参数</li>
+<li>注意：带有默认值的参数一定要位于参数列表的最后面</li>
+</ul>
+<blockquote>
+<p>不定长参数：</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">functionname</span>(<span class="hljs-params">[formal_args,] *args, b=<span class="hljs-number">22</span>, **kwargs</span>):<br>   <span class="hljs-string">&quot;&quot;&quot;函数_文档字符串&quot;&quot;&quot;</span><br>   function_suite<br>   <span class="hljs-keyword">return</span> [expression]<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><p>加了星号（*）的变量args会存放所有未命名的变量参数，args为元组</p>
+</li>
+<li><p>而加**的变量kwargs会存放命名参数，即形如key&#x3D;value的参数， kwargs为字典.</p>
+</li>
+<li><p>如果很多个值都是不定长参数，那么这种情况下，可以将缺省参数放到 *args的后面， 但如果有<strong>kwargs的话，</strong>kwargs必须是最后的</p>
+</li>
+</ul>
+<blockquote>
+<p>拆包、交换变量的值</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">get_my_info</span>():<br>    high = <span class="hljs-number">178</span><br>    weight = <span class="hljs-number">100</span><br>    age = <span class="hljs-number">18</span><br>    <span class="hljs-keyword">return</span> high, weight, age<br><br><br>my_high, my_weight, my_age = get_my_info()<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>拆包时要注意，需要拆的数据的个数要与变量的个数相同，否则程序会异常</li>
+<li>除了对元组拆包之外，还可以对列表、字典等拆包</li>
+</ul>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><ul>
+<li>Python中函数参数是值传递</li>
+<li>所谓可变类型与不可变类型是指：数据能够直接进行修改，如果能直接修改那么就是可变，否则是不可变</li>
+<li>可变类型有： 列表、字典、集合</li>
+<li>不可变类型有： 数字、字符串、元组</li>
+<li>对于不可变类型，因变量不能修改，所以运算不会影响到变量自身</li>
+<li>而对于可变类型来说，函数体中的运算有可能会更改传入的参数变量</li>
+</ul>
+<h1 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h1><blockquote>
+<p>写数据(write)</p>
+</blockquote>
+<p>首先打开文件<br>然后使用write()可以完成向文件写入数据<br>最后关闭文件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&#x27;test.txt&#x27;</span>, <span class="hljs-string">&#x27;w&#x27;</span>)<br>f.write(<span class="hljs-string">&#x27;hello world, i am here!&#x27;</span>)<br>f.close()<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>如果文件不存在那么创建，如果存在那么就先清空，然后写入数据</li>
+</ul>
+<blockquote>
+<p>读数据（read）</p>
+</blockquote>
+<p>首先打开文件<br>然后使用read()可以完成从文件读出数据<br>最后关闭文件</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python">f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&#x27;test.txt&#x27;</span>, <span class="hljs-string">&#x27;r&#x27;</span>)<br>content = f.read(<span class="hljs-number">5</span>)  <span class="hljs-comment"># 最多读取5个数据</span><br><span class="hljs-built_in">print</span>(content)<br>f.close()  <span class="hljs-comment"># 关闭文件，这个可以是个好习惯哦</span><br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><p>如果用open打开文件时，如果使用的”r”，那么可以省略，即只写 <code>open(&#39;test.txt&#39;)</code></p>
+</li>
+<li><p>read（）：读字节</p>
+</li>
+<li><p>readline（）：读一行</p>
+</li>
+<li><p>readlines（）：读全部</p>
+</li>
+</ul>
+<blockquote>
+<p>文件重命名：</p>
+</blockquote>
+<p>os模块中的rename()可以完成对文件的重命名操作</p>
+<p>rename(需要修改的文件名, 新的文件名)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">os.rename(<span class="hljs-string">&quot;毕业论文.txt&quot;</span>, <span class="hljs-string">&quot;毕业论文-最终版.txt&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>删除文件：</p>
+</blockquote>
+<p>os模块中的remove()可以完成对文件的删除操作</p>
+<p>remove(待删除的文件名)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">os.remove(<span class="hljs-string">&quot;毕业论文.txt&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>创建文件夹：</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">os.mkdir(<span class="hljs-string">&quot;张三&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>获取当前路径：</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">os.getcwd()<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>改变默认目录</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">os.chdir(<span class="hljs-string">&quot;../&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>获取目录列表：</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">os.listdir(<span class="hljs-string">&quot;./&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>删除文件夹：</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">os.rmdir(<span class="hljs-string">&quot;张三&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">类名</span>:<br>    方法列表<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>定义类时有2种形式：新式类和经典类，上面代码中的Hero为新式类，前两行注释部分则为经典类；</li>
+<li>object 是Python 里所有类的最顶级父类；</li>
+<li>类名 的命名规则按照”大驼峰命名法”；</li>
+<li>info 是一个实例方法，第一个参数一般是self，表示实例对象本身，当然了可以将self换为其它的名字，其作用是一个变量 这个变量指向了实例对象</li>
+</ul>
+<p>属性可以在类外面用.属性的方式添加</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 给对象添加属性，以及对应的属性值</span><br>taidamier.name = <span class="hljs-string">&quot;泰达米尔&quot;</span>  <span class="hljs-comment"># 姓名</span><br>taidamier.hp = <span class="hljs-number">2600</span>  <span class="hljs-comment"># 生命值</span><br>taidamier.atk = <span class="hljs-number">450</span>  <span class="hljs-comment"># 攻击力</span><br>taidamier.armor = <span class="hljs-number">200</span>  <span class="hljs-comment"># 护甲值</span><br></code></pre></td></tr></table></figure>
+
+<p>也可以使用构造函数来添加</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>    <span class="hljs-string">&quot;&quot;&quot; 方法，用来做变量初始化 或 赋值 操作，在类实例化对象的时候，会被自动调用&quot;&quot;&quot;</span><br>    self.name = <span class="hljs-string">&quot;泰达米尔&quot;</span> <span class="hljs-comment"># 姓名</span><br>    self.hp = <span class="hljs-number">2600</span> <span class="hljs-comment"># 生命值</span><br>    self.atk = <span class="hljs-number">450</span>  <span class="hljs-comment"># 攻击力</span><br>    self.armor = <span class="hljs-number">200</span>  <span class="hljs-comment"># 护甲值</span><br></code></pre></td></tr></table></figure>
+
+<p>内部方式使用self来获取属性</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">info</span>(<span class="hljs-params">self</span>):<br>    <span class="hljs-string">&quot;&quot;&quot;在类的实例方法中，通过self获取该对象的属性&quot;&quot;&quot;</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;英雄 %s 的生命值 :%d&quot;</span> % (self.name, self.hp))<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;英雄 %s 的攻击力 :%d&quot;</span> % (self.name, self.atk))<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;英雄 %s 的护甲值 :%d&quot;</span> % (self.name, self.armor))<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>构造函数</p>
+</blockquote>
+<p><code>__init__()</code>方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-string">&quot;&quot;&quot;定义了一个英雄类，可以移动和攻击&quot;&quot;&quot;</span><br><span class="hljs-comment"># Python 的类里提供的，两个下划线开始，两个下划线结束的方法，就是魔法方法，__init__()就是一个魔法方法，通常用来做属性初始化 或 赋值 操作。</span><br><span class="hljs-comment"># 如果类面没有写__init__方法，Python会自动创建，但是不执行任何操作，</span><br><span class="hljs-comment"># 如果为了能够在完成自己想要的功能，可以自己定义__init__方法，</span><br><span class="hljs-comment"># 所以一个类里无论自己是否编写__init__方法 一定有__init__方法。</span><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>    <span class="hljs-string">&quot;&quot;&quot; 方法，用来做变量初始化 或 赋值 操作，在类实例化对象的时候，会被自动调用&quot;&quot;&quot;</span><br>    self.name = <span class="hljs-string">&quot;泰达米尔&quot;</span> <span class="hljs-comment"># 姓名</span><br>    self.hp = <span class="hljs-number">2600</span> <span class="hljs-comment"># 生命值</span><br>    self.atk = <span class="hljs-number">450</span>  <span class="hljs-comment"># 攻击力</span><br>    self.armor = <span class="hljs-number">200</span>  <span class="hljs-comment"># 护甲值</span><br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><code>__init__()</code>方法，在创建一个对象时默认被调用，不需要手动调用</li>
+<li><code>__init__(self)</code>中的self参数，不需要开发者传递，python解释器会自动把当前的对象引用传递过去。</li>
+<li>在类内部获取 属性 和 实例方法，通过self获取；</li>
+<li>在类外部获取 属性 和 实例方法，通过对象名获取。</li>
+<li>如果一个类有多个对象，每个对象的属性是各自保存的，都有各自独立的地址；</li>
+<li>但是实例方法是所有对象共享的，只占用一份内存空间。类会通过self来判断是哪个对象调用了实例方法。</li>
+</ul>
+<blockquote>
+<p><code>__str__(self)</code></p>
+</blockquote>
+<p>类似于toString方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">__str__</span>(<span class="hljs-params">self</span>):<br>    <span class="hljs-string">&quot;&quot;&quot;</span><br><span class="hljs-string">        这个方法是一个魔法方法 (Magic Method) ，用来显示信息</span><br><span class="hljs-string">        该方法需要 return 一个数据，并且只有self一个参数，当在类的外部 print(对象) 则打印这个数据</span><br><span class="hljs-string">    &quot;&quot;&quot;</span><br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;英雄 &lt;%s&gt; 数据： 生命值 %d, 攻击力 %d, 护甲值 %d&quot;</span> % (self.name, self.hp, self.atk, self.armor)<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>在python中方法名如果是<code>__xxxx__()</code>的，那么就有特殊的功能，因此叫做“魔法”方法</li>
+<li>当使用print输出对象的时候，默认打印对象的内存地址。如果类定义了<code>__str__(self)</code>方法，那么就会打印从在这个方法中 <code>return</code> 的数据</li>
+<li><code>__str__</code>方法通常返回一个字符串，作为这个对象的描述信息</li>
+</ul>
+<blockquote>
+<p>析构函数</p>
+</blockquote>
+<p><code>__del__()</code>方法</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 当对象被删除时，会自动被调用</span><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">__del__</span>(<span class="hljs-params">self</span>):<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;__del__方法被调用&quot;</span>)<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;%s 被 GM 干掉了...&quot;</span> % self.name)<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>当有变量保存了一个对象的引用时，此对象的引用计数就会加1；</li>
+<li>当使用del() 删除变量指向的对象时，则会减少对象的引用计数。如果对象的引用计数不为1，那么会让这个对象的引用计数减1，当对象的引用计数为0的时候，则对象才会被真正删除（内存被回收）。</li>
+</ul>
+<blockquote>
+<p>类属性</p>
+</blockquote>
+<p>写在类里面的属性是静态的，写在构造函数里面的是成员变量</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">People</span>(<span class="hljs-title class_ inherited__">object</span>):<br>    address = <span class="hljs-string">&#x27;山东&#x27;</span>  <span class="hljs-comment"># 类属性</span><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>        self.name = <span class="hljs-string">&#x27;xiaowang&#x27;</span>  <span class="hljs-comment"># 实例属性</span><br>        self.age = <span class="hljs-number">20</span>  <span class="hljs-comment"># 实例属性</span><br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>类方法</p>
+</blockquote>
+<p>是类对象所拥有的方法，需要用修饰器<code>@classmethod</code>来标识其为类方法，对于类方法，第一个参数必须是类对象，一般以<code>cls</code>作为第一个参数（当然可以用其他名称的变量作为其第一个参数，但是大部分人都习惯以’cls’作为第一个参数的名字，就最好用’cls’了），能够通过实例对象和类对象去访问。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">People</span>(<span class="hljs-title class_ inherited__">object</span>):<br>    country = <span class="hljs-string">&#x27;china&#x27;</span><br><br>    <span class="hljs-comment">#类方法，用classmethod来进行修饰</span><br><span class="hljs-meta">    @classmethod</span><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_country</span>(<span class="hljs-params">cls</span>):<br>        <span class="hljs-keyword">return</span> cls.country<br></code></pre></td></tr></table></figure>
+
+<p>当方法中 需要使用类对象 (如访问私有类属性等)时，定义类方法<br>类方法一般和类属性配合使用</p>
+<blockquote>
+<p>静态方法</p>
+</blockquote>
+<p>需要通过修饰器<code>@staticmethod</code>来进行修饰，静态方法不需要多定义参数，可以通过对象和类来访问。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">People</span>(<span class="hljs-title class_ inherited__">object</span>):<br>    country = <span class="hljs-string">&#x27;china&#x27;</span><br><br><span class="hljs-meta">    @staticmethod</span><br>    <span class="hljs-comment">#静态方法</span><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">get_country</span>():<br>        <span class="hljs-keyword">return</span> People.country<br></code></pre></td></tr></table></figure>
+
+<p>当方法中 既不需要使用实例对象(如实例对象，实例属性)，也不需要使用类对象 (如类属性、类方法、创建实例等)时，定义静态方法取消不需要的参数传递，有利于 减少不必要的内存占用和性能消耗</p>
+<h2 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h2><blockquote>
+<p>封装的意义：</p>
+</blockquote>
+<ol>
+<li>将属性和方法放到一起做为一个整体，然后通过实例化对象来处理；</li>
+<li>隐藏内部实现细节，只需要和对象及其属性和方法交互就可以了；</li>
+<li>对类的属性和方法增加 访问权限控制。</li>
+</ol>
+<blockquote>
+<p>私有权限：在属性名和方法名 前面 加上两个下划线 __</p>
+</blockquote>
+<ol>
+<li>类的私有属性 和 私有方法，都不能通过对象直接访问，但是可以在本类内部访问；</li>
+<li>类的私有属性 和 私有方法，都不会被子类继承，子类也无法访问；</li>
+<li>私有属性 和 私有方法 往往用来处理类的内部事情，不通过对象处理，起到安全作用。</li>
+</ol>
+<blockquote>
+<p>修改私有属性的值</p>
+</blockquote>
+<p>Getter</p>
+<p>Setter</p>
+<blockquote>
+<p>总结</p>
+</blockquote>
+<ul>
+<li>Python中没有像C++中 public 和 private 这些关键字来区别公有属性和私有属性。</li>
+<li>Python是以属性命名方式来区分，如果在属性和方法名前面加了2个下划线’__’，则表明该属性和方法是私有权限，否则为公有权限。</li>
+</ul>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 父类</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">A</span>(<span class="hljs-title class_ inherited__">object</span>):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self</span>):<br>        self.num = <span class="hljs-number">10</span><br><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">print_num</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-built_in">print</span>(self.num + <span class="hljs-number">10</span>)<br><span class="hljs-comment"># 子类</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">B</span>(<span class="hljs-title class_ inherited__">A</span>):<br>    <span class="hljs-keyword">pass</span><br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><p>子类在继承的时候，在定义类时，小括号()中为父类的名字</p>
+</li>
+<li><p>父类的属性、方法，会被继承给子类</p>
+</li>
+<li><p>多继承可以继承多个父类，也继承了所有父类的属性和方法</p>
+</li>
+<li><p>注意：如果多个父类中有同名的 属性和方法，则<strong>默认使用第一个父类</strong>的属性和方法（根据类的魔法属性<strong>mro</strong>的顺序来查找）</p>
+</li>
+<li><p>多个父类中，不重名的属性和方法，不会有任何影响。</p>
+</li>
+</ul>
+<blockquote>
+<p>重写</p>
+</blockquote>
+<p>如果子类和父类的方法名和属性名相同，则默认使用子类的</p>
+<blockquote>
+<p>调用父类属性方法</p>
+</blockquote>
+<p>调用父类方法格式：父类类名.父类方法(self)</p>
+<p>无论何时何地，self都表示是子类的对象。在调用父类方法时，通过传递self参数，来控制方法和属性的访问修改。</p>
+<p>也可以使用super()方法</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs scss"># super()的简化版，只支持新式类<br>super()<span class="hljs-selector-class">.__init__</span>()  # 执行父类的 __init__方法<br>super()<span class="hljs-selector-class">.make_cake</span>()  # 执行父类的 实例方法<br>self<span class="hljs-selector-class">.make_cake</span>()  # 执行本类的实例方法<br></code></pre></td></tr></table></figure>
+
+<p>子类继承了多个父类，如果父类类名修改了，那么子类也要涉及多次修改。而且需要重复写多次调用，显得代码臃肿。</p>
+<p>使用super() 可以逐一调用所有的父类方法，并且只执行一次。调用顺序遵循 <strong>mro</strong> 类属性的顺序。</p>
+<p><strong>注意：如果继承了多个父类，且父类都有同名方法，则默认只执行第一个父类的(同名方法只执行一次，目前super()不支持执行多个父类的同名方法)</strong></p>
+<p>super() 在Python2.3之后才有的机制，用于通常单继承的多层继承。</p>
+<h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><p>和C++、Java一样，特殊的一种继承</p>
+<h1 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h1><p>跟C++、Java一样</p>
+<blockquote>
+<p>捕获异常</p>
+</blockquote>
+<p>try-except-else-finally</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">try</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;-----test--1---&#x27;</span>)<br>    f = <span class="hljs-built_in">open</span>(<span class="hljs-string">&#x27;123.txt&#x27;</span>, <span class="hljs-string">&#x27;r&#x27;</span>)  <span class="hljs-comment"># 如果123.txt文件不存在，那么会产生 IOError 异常</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;-----test--2---&#x27;</span>)<br>    <span class="hljs-keyword">try</span>:<br>        <span class="hljs-built_in">print</span>(num)  <span class="hljs-comment"># 如果num变量没有定义，那么会产生 NameError 异常</span><br>    <span class="hljs-keyword">except</span> (IOError, NameError):<br>        <span class="hljs-comment"># 如果想通过一次except捕获到多个异常可以用一个元组的方式</span><br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;捕获异常&quot;</span>)<br>    <span class="hljs-keyword">else</span>:<br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;没有出现到异常，真高兴&#x27;</span>)<br>    <span class="hljs-keyword">finally</span>:<br>        f.close()<br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;关闭文件&#x27;</span>)<br><span class="hljs-keyword">except</span> NameError <span class="hljs-keyword">as</span> result:  <span class="hljs-comment"># 捕获所有异常并存储异常的详细信息</span><br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;没有这个文件&quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<h1 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h1><p>在Python中有一个概念叫做模块（module），这个和C语言中的头文件以及Java中的包类似</p>
+<ul>
+<li><p>在Python中用关键字<code>import</code>来引入某个模块，比如要引用模块math，就可以在文件最开始的地方用import math来引入。</p>
+</li>
+<li><p>可以根据__name__变量的结果能够判断出，是直接执行的python脚本还是被引入执行的，从而能够有选择性的执行测试代码</p>
+</li>
+</ul>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">if</span> __name__ == <span class="hljs-string">&#x27;main&#x27;</span>:<br>	<span class="hljs-comment"># 测试代码</span><br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><p>如果一个文件中有__all__变量，那么也就意味着这个变量中的元素，会被from xxx import *时导入,没有在这个变量中的不会被导入</p>
+</li>
+<li><p>包将有联系的模块组织在一起，即放到同一个文件夹下，并且在这个文件夹创建一个名字为<code>__init__.py</code> 文件，那么这个文件夹就称之为<code>包</code></p>
+</li>
+<li><p>有效避免模块名称冲突问题，让应用组织结构更加清晰</p>
+</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>python基础语法笔记</div>
+      <div>http://example.com/2022/11/29/python基础语法笔记/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年11月29日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>许可协议</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/07/04/MySpring/" title="MySring">
+                        <span class="hidden-mobile">MySring</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
