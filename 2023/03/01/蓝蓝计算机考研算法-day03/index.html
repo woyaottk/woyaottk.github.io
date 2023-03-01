@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="3.计算字符串中含有的不同字符的个数编写一个函数，计算字符串中含有的不同字符的个数。字符在ASCII码范围内（0~127，包括0和127），换行表示结束符，不在字符里。不在范围内的不作统计。多个相同的字符只计算一次 例如，对于字符串abaca而言，有a、b、c三个不同的字符，因此输出3。 数据范围：1&lt;&#x3D;n&lt;&#x3D;500  输入描述  输入一行没有空格的字符串。  输出">
+    <meta name="description" content="题目1一个小球从10处落下，每次的弹回之前的高度一半，请问小球在静止之前一共走过多少距离？  思路  每次计算一次下降路程路径+上升过程路径  代码  1234567891011double sum(double high) &amp;#123;	double sum &#x3D; 0;	while (high &gt; 1e-8) &amp;#123;		&#x2F;&#x2F;下降过程路径		sum +&#x3D; high;		high &#x2F;&#x3D; 2">
 <meta property="og:type" content="article">
-<meta property="og:title" content="蓝蓝计算机考研算法-day02">
-<meta property="og:url" content="http://example.com/2023/02/28/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day02/index.html">
+<meta property="og:title" content="蓝蓝计算机考研算法-day03">
+<meta property="og:url" content="http://example.com/2023/03/01/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day03/index.html">
 <meta property="og:site_name" content="梭梭子的小空间">
-<meta property="og:description" content="3.计算字符串中含有的不同字符的个数编写一个函数，计算字符串中含有的不同字符的个数。字符在ASCII码范围内（0~127，包括0和127），换行表示结束符，不在字符里。不在范围内的不作统计。多个相同的字符只计算一次 例如，对于字符串abaca而言，有a、b、c三个不同的字符，因此输出3。 数据范围：1&lt;&#x3D;n&lt;&#x3D;500  输入描述  输入一行没有空格的字符串。  输出">
+<meta property="og:description" content="题目1一个小球从10处落下，每次的弹回之前的高度一半，请问小球在静止之前一共走过多少距离？  思路  每次计算一次下降路程路径+上升过程路径  代码  1234567891011double sum(double high) &amp;#123;	double sum &#x3D; 0;	while (high &gt; 1e-8) &amp;#123;		&#x2F;&#x2F;下降过程路径		sum +&#x3D; high;		high &#x2F;&#x3D; 2">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-28T03:33:34.000Z">
-<meta property="article:modified_time" content="2023-02-28T03:48:25.644Z">
+<meta property="article:published_time" content="2023-03-01T09:52:30.000Z">
+<meta property="article:modified_time" content="2023-03-01T10:06:50.774Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>蓝蓝计算机考研算法-day02 - 梭梭子的小空间</title>
+  <title>蓝蓝计算机考研算法-day03 - 梭梭子的小空间</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -195,7 +195,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="蓝蓝计算机考研算法-day02"></span>
+            <span id="subtitle" data-typed-text="蓝蓝计算机考研算法-day03"></span>
           
         </div>
 
@@ -206,8 +206,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-02-28 11:33" pubdate>
-          2023年2月28日 中午
+        <time datetime="2023-03-01 17:52" pubdate>
+          2023年3月1日 下午
         </time>
       </span>
     
@@ -218,7 +218,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          848 字
+          1.6k 字
         
       </span>
     
@@ -229,7 +229,7 @@
         
         
         
-          8 分钟
+          14 分钟
         
       </span>
     
@@ -267,39 +267,47 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">蓝蓝计算机考研算法-day02</h1>
+            <h1 style="display: none">蓝蓝计算机考研算法-day03</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="3-计算字符串中含有的不同字符的个数"><a href="#3-计算字符串中含有的不同字符的个数" class="headerlink" title="3.计算字符串中含有的不同字符的个数"></a>3.计算字符串中含有的不同字符的个数</h1><p>编写一个函数，计算字符串中含有的不同字符的个数。字符在ASCII码范围内（0~127，包括0和127），换行表示结束符，不在字符里。不在范围内的不作统计。多个相同的字符只计算一次</p>
-<p>例如，对于字符串abaca而言，有a、b、c三个不同的字符，因此输出3。</p>
-<p>数据范围：1&lt;&#x3D;n&lt;&#x3D;500</p>
-<blockquote>
-<p>输入描述</p>
-</blockquote>
-<p>输入一行没有空格的字符串。</p>
-<blockquote>
-<p>输出描述</p>
-</blockquote>
-<p>输出字符串中范围在（0~127，包括0和127）字符的种数。</p>
+                <h1 id="题目1"><a href="#题目1" class="headerlink" title="题目1"></a>题目1</h1><p>一个小球从10处落下，每次的弹回之前的高度一半，请问小球在静止之前一共走过多少距离？</p>
 <blockquote>
 <p>思路</p>
 </blockquote>
-<p>可以采用一个hashset来存储字符串中字符出现的个数。但题目又只限定于字符，故采用数组即可实现hashset的功能</p>
+<p>每次计算一次下降路程路径+上升过程路径</p>
 <blockquote>
 <p>代码</p>
 </blockquote>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">get_count</span><span class="hljs-params">(string s)</span> </span>&#123;<br>    <span class="hljs-type">int</span> mp[<span class="hljs-number">255</span>]&#123; <span class="hljs-number">0</span> &#125;;<br>    <span class="hljs-type">int</span> count = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">char</span> c : s) &#123;<br>        <span class="hljs-keyword">if</span> (!mp[c]++) &#123;<br>            count++;<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">return</span> count;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-function"><span class="hljs-type">double</span> <span class="hljs-title">sum</span><span class="hljs-params">(<span class="hljs-type">double</span> high)</span> </span>&#123;<br>	<span class="hljs-type">double</span> sum = <span class="hljs-number">0</span>;<br>	<span class="hljs-keyword">while</span> (high &gt; <span class="hljs-number">1e-8</span>) &#123;<br>		<span class="hljs-comment">//下降过程路径</span><br>		sum += high;<br>		high /= <span class="hljs-number">2</span>;<br>		<span class="hljs-comment">//上升过程路径</span><br>		sum += high;<br>	&#125;<br>	<span class="hljs-keyword">return</span> sum;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h1 id="4-从键盘输入两个数字n，m，求解m和n的最小公倍数。"><a href="#4-从键盘输入两个数字n，m，求解m和n的最小公倍数。" class="headerlink" title="4.从键盘输入两个数字n，m，求解m和n的最小公倍数。"></a>4.从键盘输入两个数字n，m，求解m和n的最小公倍数。</h1><blockquote>
-<p>思路</p>
+<h1 id="题目2"><a href="#题目2" class="headerlink" title="题目2"></a>题目2</h1><p>“答案正确”是自动判题系统给出的最令人欢喜的回复。本题属于PAT的“答案正确”大派送——只要读入的字符串满足下列条件，系统就输出”“答案正确”，否则输出“答案错误”。</p>
+<p>得到“答案正确”的条件是：</p>
+<p>1.字符串中必须仅有P、A、T这三种字符，不可以包含其它字符;</p>
+<p>2.任意形如PATx的字符串都可以获得“答案正确”，其中x或者是空字符串，或者是仅由字母A组成的字符串:</p>
+<p>3.如果aPbTc是正确的，那么aPbATca也是正确的，其中a、b、c均或者是空字符串，或者是仅由字母A组成的字符串。</p>
+<p>现在就请你为PAT写一个自动裁判程序，判定哪些字符串是可以获得“答案正确”的。</p>
+<blockquote>
+<p><strong>输入格式：</strong></p>
 </blockquote>
-<p>使用辗转相除法得到最大公约数d，然后m*n&#x2F;d就是最小公倍数</p>
+<p>每个测试输入包含1个测试用例。第1给出一个正整数n(≤10)，是需要检测的字符串个数。接下来每个字符串占一行，字符串长度不超过100，且不包含空格。</p>
+<blockquote>
+<p><strong>输出格式：</strong></p>
+</blockquote>
+<p>每个字符串的检测结果占一行，如果该字符串可以获得“答案正确”，则输出<code>YES</code>,否则输出<code>NO</code></p>
+<blockquote>
+<p><strong>思路</strong></p>
+</blockquote>
+<ol>
+<li>只能有一个P和一个T</li>
+<li>中间不能没有A</li>
+<li>开头的A的个数 * 中间的A的个数 &#x3D; 结尾的A的个数</li>
+</ol>
 <blockquote>
 <p>代码</p>
 </blockquote>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">/*</span><br><span class="hljs-comment">求两个正整数 a 和 b 的 最大公约数 d</span><br><span class="hljs-comment">则有 gcd(a,b) = gcd(b,a%b)</span><br><span class="hljs-comment">证明：</span><br><span class="hljs-comment">    设a%b = a - k*b 其中k = a/b(向下取整)</span><br><span class="hljs-comment">    若d是(a,b)的公约数 则知 d|a 且 d|b 则易知 d|a-k*b 故d也是(b,a%b) 的公约数</span><br><span class="hljs-comment">    若d是(b,a%b)的公约数 则知 d|b 且 d|a-k*b 则 d|a-k*b+k*b = d|a 故而d|b 故而 d也是(a,b)的公约数</span><br><span class="hljs-comment">    因此(a,b)的公约数集合和(b,a%b)的公约数集合相同 所以他们的最大公约数也相同 证毕#</span><br><span class="hljs-comment">*/</span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">gcd</span><span class="hljs-params">(<span class="hljs-type">int</span> a, <span class="hljs-type">int</span> b)</span></span>&#123;<br>    <span class="hljs-keyword">return</span> b ? <span class="hljs-built_in">gcd</span>(b,a%b):a; <br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">cm</span><span class="hljs-params">(<span class="hljs-type">int</span> a, <span class="hljs-type">int</span> b)</span> </span>&#123;<br>    <span class="hljs-type">int</span> d = <span class="hljs-built_in">gcd</span>(a,b);<br>    <span class="hljs-keyword">return</span> a * b / d;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-function"><span class="hljs-type">bool</span> <span class="hljs-title">check</span><span class="hljs-params">(string s)</span> </span>&#123;<br>	<span class="hljs-comment">//用l表示P第一次出现的下标，r表示T第一次出现的下标</span><br>	<span class="hljs-type">int</span> l = <span class="hljs-number">-1</span>, r = <span class="hljs-number">-1</span>;<br>	<span class="hljs-comment">//遍历每个字符</span><br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; s.<span class="hljs-built_in">length</span>(); i++) &#123;<br>		<span class="hljs-type">char</span> c = s[i];<br>		<span class="hljs-comment">//如果如果PAT这三种字符直接返回false</span><br>		<span class="hljs-keyword">if</span> (c != <span class="hljs-string">&#x27;A&#x27;</span> &amp;&amp; c != <span class="hljs-string">&#x27;P&#x27;</span> &amp;&amp; c != <span class="hljs-string">&#x27;T&#x27;</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>		<span class="hljs-comment">//如果P之前未出现过那就把这个下标赋给l</span><br>		<span class="hljs-keyword">if</span> (c == <span class="hljs-string">&#x27;P&#x27;</span> &amp;&amp; l == <span class="hljs-number">-1</span>) l = i;<br>		<span class="hljs-comment">//如果P之前出现过直接返回false</span><br>		<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (c == <span class="hljs-string">&#x27;P&#x27;</span> &amp;&amp; l != <span class="hljs-number">-1</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>		<span class="hljs-comment">//如果T之前未出现过那就把这个下标赋给l</span><br>		<span class="hljs-keyword">if</span> (c == <span class="hljs-string">&#x27;T&#x27;</span> &amp;&amp; r == <span class="hljs-number">-1</span>) r = i;<br>		<span class="hljs-comment">//如果T之前出现过直接返回false</span><br>		<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (c == <span class="hljs-string">&#x27;T&#x27;</span> &amp;&amp; r != <span class="hljs-number">-1</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>	&#125;<br>	<span class="hljs-comment">//如果中级没有A直接返回false</span><br>	<span class="hljs-keyword">if</span> (r - l - <span class="hljs-number">1</span> == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>	<span class="hljs-comment">//前面的A个数乘以中级A的个数是否等于最后面A的个数</span><br>	<span class="hljs-keyword">return</span> l * (r - l - <span class="hljs-number">1</span>) == s.<span class="hljs-built_in">length</span>() - r - <span class="hljs-number">1</span>;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>	<span class="hljs-type">int</span> n;<br>	string s;<br>	cin &gt;&gt; n;<br>	<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++) &#123;<br>		cin &gt;&gt; s;<br>		<span class="hljs-type">bool</span> flag = <span class="hljs-built_in">check</span>(s);<br>		<span class="hljs-keyword">if</span> (flag) cout &lt;&lt; <span class="hljs-string">&quot;YES&quot;</span> &lt;&lt; endl;<br>		<span class="hljs-keyword">else</span> cout &lt;&lt; <span class="hljs-string">&quot;NO&quot;</span> &lt;&lt; endl;<br>	&#125;<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 
                 
@@ -318,8 +326,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>蓝蓝计算机考研算法-day02</div>
-      <div>http://example.com/2023/02/28/蓝蓝计算机考研算法-day02/</div>
+      <div>蓝蓝计算机考研算法-day03</div>
+      <div>http://example.com/2023/03/01/蓝蓝计算机考研算法-day03/</div>
     </div>
     <div class="license-meta">
       
@@ -331,7 +339,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年2月28日</div>
+          <div>2023年3月1日</div>
         </div>
       
       
@@ -361,18 +369,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/01/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day03/" title="蓝蓝计算机考研算法-day03">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">蓝蓝计算机考研算法-day03</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/02/27/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day01%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0%E5%92%8C%E8%AE%A1%E7%AE%97%E5%AE%8C%E5%85%A8%E6%95%B0/" title="蓝蓝计算机考研算法-day01判断素数和计算完全数">
-                        <span class="hidden-mobile">蓝蓝计算机考研算法-day01判断素数和计算完全数</span>
+                      <a href="/2023/02/28/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day02/" title="蓝蓝计算机考研算法-day02">
+                        <span class="hidden-mobile">蓝蓝计算机考研算法-day02</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
