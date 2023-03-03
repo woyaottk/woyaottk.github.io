@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>蓝蓝计算机考研算法-day05</title>
+    <link href="/2023/03/03/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day05/"/>
+    <url>/2023/03/03/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day05/</url>
+    
+    <content type="html"><![CDATA[<p>输入一个链表的头节点，按链表从尾到头的顺序返回每个节点的值（用数组返回）。 </p><blockquote><p>思路：</p></blockquote><p>反正链表题都一样，只要题目没说明空间要求就用“空间换智商”管他三七二十一全部都把链表转数组，然后用数组操作即可</p><blockquote><p>代码</p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * Definition for singly-linked list.</span><br><span class="hljs-comment"> * struct ListNode &#123;</span><br><span class="hljs-comment"> *     int val;</span><br><span class="hljs-comment"> *     ListNode *next;</span><br><span class="hljs-comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span><br><span class="hljs-comment"> * &#125;;</span><br><span class="hljs-comment"> */</span><br><br><span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">reverseList</span><span class="hljs-params">(ListNode* head)</span> </span>&#123;<br>    vector&lt;<span class="hljs-type">int</span>&gt; res;<br>    ListNode* cur = head;<br>    <span class="hljs-keyword">while</span>(cur) &#123;<br>        res.<span class="hljs-built_in">push_back</span>(cur-&gt;val);<br>        cur = cur-&gt;next;<br>    &#125;<br>    <span class="hljs-built_in">reverse</span>(res.<span class="hljs-built_in">begin</span>(),res.<span class="hljs-built_in">end</span>());<br>    <span class="hljs-keyword">return</span> res;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>蓝蓝计算机考研算法训练二期-day04</title>
     <link href="/2023/03/01/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%E4%BA%8C%E6%9C%9F-day04/"/>
     <url>/2023/03/01/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%E4%BA%8C%E6%9C%9F-day04/</url>
