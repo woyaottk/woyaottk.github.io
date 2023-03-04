@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>蓝蓝计算机考研算法训练二期-day06</title>
+    <link href="/2023/03/04/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%E4%BA%8C%E6%9C%9F-day06/"/>
+    <url>/2023/03/04/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%E4%BA%8C%E6%9C%9F-day06/</url>
+    
+    <content type="html"><![CDATA[<h1 id="字符串反转"><a href="#字符串反转" class="headerlink" title="字符串反转"></a>字符串反转</h1><p>接受一个只包含小写字母的字符串，然后输出该字符串反转后的字符串。（字符串长度不超过1000）</p><blockquote><p>思路</p></blockquote><p>双指针，或者成为API战士</p><blockquote><p>代码</p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-function">string <span class="hljs-title">reverse1</span><span class="hljs-params">(string s)</span> </span>&#123;<br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">reverse</span>(s.<span class="hljs-built_in">begin</span>(), s.<span class="hljs-built_in">end</span>());<br>&#125;<br><br><span class="hljs-function">string <span class="hljs-title">reverse2</span><span class="hljs-params">(string s)</span> </span>&#123;<br>    <span class="hljs-type">char</span> c_list[s.<span class="hljs-built_in">length</span>()];<br>    <span class="hljs-built_in">strcpy</span>(c_list,s.<span class="hljs-built_in">data</span>());<br>    <span class="hljs-type">int</span> l = <span class="hljs-number">0</span>, r = s.<span class="hljs-built_in">length</span>() - <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span>(l &lt; r) &#123;<br>        <span class="hljs-type">char</span> t = c_list[l];<br>        c_list[l] = c_list[r];<br>        c_list[r] = t;<br>        l++,r--;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">string</span>(c_list);<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>蓝蓝计算机考研算法-day05</title>
     <link href="/2023/03/03/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day05/"/>
     <url>/2023/03/03/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day05/</url>
