@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="成绩转换。输入一个百分制的成绩M，将其转换成对应的等级，具体转换规则如下： 90 ~ 100 为 A; 80 ~ 89 为 B; 70 ~ 79 为 C; 60 ~ 69 为 D; 0 ~ 59 为 E; 思路if-else if就行了 具体实现1234567891011121314151617#include&lt;iostream&gt;using namespace std;int main">
+    <meta name="description" content="题目1设计一个从5个整数中取最小数和最大数的程序 输入 :输入只有一组测试数据，为五个不大于1万的正整数 输出 :输出两个数，第一个为这五个数中的最小值，第二个为这五个数中的最大值，两个数字以空格格开。 1234567891011121314151617#include &lt;iostream&gt;using namespace std;&#x2F;&#x2F; 求5个数的最值int main() &amp;#123;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="蓝蓝计算机考研算法训练二期-day08">
-<meta property="og:url" content="http://example.com/2023/03/07/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%E4%BA%8C%E6%9C%9F-day08/index.html">
+<meta property="og:title" content="蓝蓝计算机考研算法-day09">
+<meta property="og:url" content="http://example.com/2023/03/08/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day09/index.html">
 <meta property="og:site_name" content="梭梭子的小空间">
-<meta property="og:description" content="成绩转换。输入一个百分制的成绩M，将其转换成对应的等级，具体转换规则如下： 90 ~ 100 为 A; 80 ~ 89 为 B; 70 ~ 79 为 C; 60 ~ 69 为 D; 0 ~ 59 为 E; 思路if-else if就行了 具体实现1234567891011121314151617#include&lt;iostream&gt;using namespace std;int main">
+<meta property="og:description" content="题目1设计一个从5个整数中取最小数和最大数的程序 输入 :输入只有一组测试数据，为五个不大于1万的正整数 输出 :输出两个数，第一个为这五个数中的最小值，第二个为这五个数中的最大值，两个数字以空格格开。 1234567891011121314151617#include &lt;iostream&gt;using namespace std;&#x2F;&#x2F; 求5个数的最值int main() &amp;#123;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-03-07T14:11:00.000Z">
-<meta property="article:modified_time" content="2023-03-07T14:16:38.022Z">
+<meta property="article:published_time" content="2023-03-08T14:20:39.000Z">
+<meta property="article:modified_time" content="2023-03-10T09:43:55.082Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>蓝蓝计算机考研算法训练二期-day08 - 梭梭子的小空间</title>
+  <title>蓝蓝计算机考研算法-day09 - 梭梭子的小空间</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -195,7 +195,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="蓝蓝计算机考研算法训练二期-day08"></span>
+            <span id="subtitle" data-typed-text="蓝蓝计算机考研算法-day09"></span>
           
         </div>
 
@@ -206,8 +206,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-07 22:11" pubdate>
-          2023年3月7日 晚上
+        <time datetime="2023-03-08 22:20" pubdate>
+          2023年3月8日 晚上
         </time>
       </span>
     
@@ -267,28 +267,24 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">蓝蓝计算机考研算法训练二期-day08</h1>
+            <h1 style="display: none">蓝蓝计算机考研算法-day09</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="成绩转换。"><a href="#成绩转换。" class="headerlink" title="成绩转换。"></a>成绩转换。</h1><p>输入一个百分制的成绩M，将其转换成对应的等级，具体转换规则如下： 90 ~ 100 为 A; 80 ~ 89 为 B; 70 ~ 79 为 C; 60 ~ 69 为 D; 0 ~ 59 为 E;</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>if-else if就行了</p>
-<h2 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>	<span class="hljs-type">int</span> n;<br>	cin&gt;&gt;n;<br>	<span class="hljs-keyword">if</span>(n&gt;=<span class="hljs-number">90</span> &amp;&amp; n&lt;=<span class="hljs-number">100</span>)<br>		cout&lt;&lt;<span class="hljs-string">&quot;A&quot;</span>;<br>	<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(n&gt;=<span class="hljs-number">80</span> &amp;&amp; n&lt;=<span class="hljs-number">89</span>)<br>		cout&lt;&lt;<span class="hljs-string">&quot;B&quot;</span>;<br>	<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(n&gt;=<span class="hljs-number">70</span> &amp;&amp; n&lt;=<span class="hljs-number">79</span>)<br>		cout&lt;&lt;<span class="hljs-string">&quot;C&quot;</span>;<br>	<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(n&gt;=<span class="hljs-number">60</span> &amp;&amp; n&lt;=<span class="hljs-number">69</span>)<br>		cout&lt;&lt;<span class="hljs-string">&quot;D&quot;</span>;<br>	<span class="hljs-keyword">else</span><br>		cout&lt;&lt;<span class="hljs-string">&quot;E&quot;</span>;<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+                <h4 id="题目1"><a href="#题目1" class="headerlink" title="题目1"></a>题目1</h4><p>设计一个从5个整数中取最小数和最大数的程序</p>
+<p>输入 :<br>输入只有一组测试数据，为五个不大于1万的正整数</p>
+<p>输出 :<br>输出两个数，第一个为这五个数中的最小值，第二个为这五个数中的最大值，两个数字以空格格开。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-comment">// 求5个数的最值</span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-type">int</span> a[<span class="hljs-number">5</span>] = &#123;<span class="hljs-number">0</span>&#125;;              <br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) &#123;<br>        cin &gt;&gt; a[i];<br>    &#125;<br>    <span class="hljs-type">int</span> max_num = a[<span class="hljs-number">0</span>], min_num = a[<span class="hljs-number">0</span>];  <br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i : a) &#123;<br>        max_num = <span class="hljs-built_in">max</span>(max_num, i);<br>        min_num = <span class="hljs-built_in">min</span>(min_num, i);<br>    &#125;<br>    cout &lt;&lt; <span class="hljs-string">&quot;最大值为：&quot;</span> &lt;&lt; max_num &lt;&lt; <span class="hljs-string">&quot; 最小值为:&quot;</span> &lt;&lt; min_num;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h1 id="数值统计"><a href="#数值统计" class="headerlink" title="数值统计"></a>数值统计</h1><blockquote>
-<p>统计给定的n个数中，负数、零和正数的个数。</p>
-</blockquote>
-<ul>
-<li><p>输入：</p>
-<p>输入数据有多组，每组占一行，每行的第一个数是整数n（n&lt;100），表示需要统计的数值的个数，然后是n个实数；如果n&#x3D;0，则表示输入结束，该行不做处理。</p>
-</li>
-<li><p>输出：</p>
-<p>对于每组输入数据，输出一行a,b和c，分别表示给定的数据中负数、零和正数的个数。</p>
-</li>
-</ul>
-<h2 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h2><p>简单的if判断</p>
-<h2 id="具体实现-1"><a href="#具体实现-1" class="headerlink" title="具体实现"></a>具体实现</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-type">int</span> n;<br>    <span class="hljs-type">int</span> x;<br>    <span class="hljs-keyword">while</span>(cin&gt;&gt;n)&#123; <span class="hljs-comment">//输入多组数据 </span><br>        <span class="hljs-keyword">if</span>(n&gt;<span class="hljs-number">0</span>)&#123;<br>            <span class="hljs-type">int</span> a=<span class="hljs-number">0</span>,b=<span class="hljs-number">0</span>,c=<span class="hljs-number">0</span>; <span class="hljs-comment">//a:负数个数，b:0的个数，c:正数个数 </span><br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>; i&lt;n; i++)&#123;<br>                cin&gt;&gt;x;<br>                <span class="hljs-keyword">if</span>(x&gt;<span class="hljs-number">0</span>) c++;<br>                <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(x&lt;<span class="hljs-number">0</span>) a++;<br>                <span class="hljs-keyword">else</span> b++;<br>            &#125;			<br>            cout&lt;&lt;a&lt;&lt;b&lt;&lt;c;<br>            cout&lt;&lt;endl;<br>        &#125;<br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; <span class="hljs-comment">//若=0或&lt;0，直接结束程序</span><br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+<h4 id="题目2"><a href="#题目2" class="headerlink" title="题目2"></a>题目2</h4><p>输入三个字符（可以重复）后，按各字符的ASC码从小到大的顺序输出这三个字符。</p>
+<p>输入:<br>第一行输入一个数N,表示有N组测试数据。后面的行输入多组数据，每组输入数据都是占一行，由三个字符组成，之间无空格。</p>
+<p>输出：<br>对于每组输入数据，输出一行，字符中间用一个空格分开。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-comment">//ASCII码排序</span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;    <br>    <span class="hljs-type">int</span> n = <span class="hljs-number">0</span>;     <br>    string str = <span class="hljs-string">&quot;&quot;</span>; <br>    <span class="hljs-type">char</span> tmp = <span class="hljs-number">0</span>;     <br>    cin &gt;&gt; n;        <br>    <span class="hljs-keyword">while</span> (n--) &#123;  <br>        cin &gt;&gt; str;<br>        <span class="hljs-keyword">if</span>(str[<span class="hljs-number">0</span>] &gt; str[<span class="hljs-number">1</span>]) <span class="hljs-built_in">swap</span>(str[<span class="hljs-number">0</span>],str[<span class="hljs-number">1</span>]);<br>        <span class="hljs-keyword">if</span>(str[<span class="hljs-number">1</span>] &gt; str[<span class="hljs-number">2</span>]) <span class="hljs-built_in">swap</span>(str[<span class="hljs-number">1</span>],str[<span class="hljs-number">2</span>]);<br>        cout &lt;&lt; <span class="hljs-string">&quot;顺序为：&quot;</span> &lt;&lt; str[<span class="hljs-number">0</span>] &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; str[<span class="hljs-number">1</span>] &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; str[<span class="hljs-number">2</span>] &lt;&lt; endl;<br>    &#125;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
                 
               </div>
             
@@ -305,8 +301,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>蓝蓝计算机考研算法训练二期-day08</div>
-      <div>http://example.com/2023/03/07/蓝蓝计算机考研算法训练二期-day08/</div>
+      <div>蓝蓝计算机考研算法-day09</div>
+      <div>http://example.com/2023/03/08/蓝蓝计算机考研算法-day09/</div>
     </div>
     <div class="license-meta">
       
@@ -318,7 +314,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月7日</div>
+          <div>2023年3月8日</div>
         </div>
       
       
@@ -348,18 +344,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/08/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day09/" title="蓝蓝计算机考研算法-day09">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">蓝蓝计算机考研算法-day09</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/06/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95-day07/" title="蓝蓝计算机考研算法-day07">
-                        <span class="hidden-mobile">蓝蓝计算机考研算法-day07</span>
+                      <a href="/2023/03/07/%E8%93%9D%E8%93%9D%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94%E7%AE%97%E6%B3%95%E8%AE%AD%E7%BB%83%E4%BA%8C%E6%9C%9F-day08/" title="蓝蓝计算机考研算法训练二期-day08">
+                        <span class="hidden-mobile">蓝蓝计算机考研算法训练二期-day08</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
